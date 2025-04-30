@@ -15,12 +15,15 @@ import Depilation from "./pages/Depilation";
 import MakeUp from "./pages/MakeUp";
 import Spa from "./pages/Spa";
 import "./styles/main.css";
+import ScrollToTop from "./components/ScrollToTop"; // Importa ScrollToTop
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Navbar />
+
+        <ScrollToTop /> {/* Coloca ScrollToTop aquí */}
 
         <main>
           <Routes>
@@ -31,11 +34,11 @@ function App() {
             <Route path="/manos-y-pies" element={<Hands />} />
             <Route path="/depilacion" element={<Depilation />} />
             <Route path="/maquillaje" element={<MakeUp />} />
-            <Route path="//spa-bienestar" element={<Spa />} />
+            <Route path="/spa-bienestar" element={<Spa />} />
             <Route path="/ubicacion" element={<Location />} />
             <Route path="/agendar" element={<Appointment />} />
             <Route path="/galeria" element={<Gallery />} />
-            <Route path="/nuestro-equipo" element={<Team />} /> {/* <-- AÑADIDO AQUÍ */}
+            <Route path="/nuestro-equipo" element={<Team />} />
           </Routes>
         </main>
 
@@ -44,7 +47,5 @@ function App() {
     </Router>
   );
 }
-
-
 
 export default App;
