@@ -99,11 +99,19 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="cta-section" aria-label="Llamado a la acción">
-        <h2>Servicios a tu medida</h2>
-        <p>Solicita tu cita y vive una experiencia pensada especialmente para ti.</p>
-        <a href="#agenda" className="cta-button">Agenda tu cita ahora</a>
-      </section>
+<section className="cta-section" aria-label="Llamado a la acción">
+  <h2>Servicios a tu medida</h2>
+  <p>Solicita tu cita y vive una experiencia pensada especialmente para ti.</p>
+  <a
+    href="https://wa.me/message/PNWIFD6VJ3JTN1?src=qr"
+    className="cta-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Agenda tu cita ahora
+  </a>
+</section>
+
     </main>
   );
 };

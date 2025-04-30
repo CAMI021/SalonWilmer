@@ -39,7 +39,7 @@ const Appointment: React.FC = () => {
               <p>Estamos preparando todo para ti ✨</p>
               <div className="loader"></div>
               <p className="note">
-                Si no eres redirigido automáticamente, <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}>haz clic aquí</a>.
+                Si no eres redirigido automáticamente, <a href={`https://wa.me/message/PNWIFD6VJ3JTN1?src=qr${whatsappNumber}?text=${encodeURIComponent(message)}`}>haz clic aquí</a>.
               </p>
             </>
           )}
