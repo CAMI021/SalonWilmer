@@ -1,0 +1,29 @@
+/* Establece box-sizing globalmente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* 
+* {
+  outline: 1px solid rgb(0, 255, 21);
+} */
+
+

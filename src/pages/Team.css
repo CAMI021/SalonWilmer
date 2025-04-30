@@ -1,0 +1,162 @@
+/* Animación de aparición */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Estilos de la sección de equipo con animaciones */
+.team-container {
+  background: linear-gradient(to bottom, #484444, #333232);
+  color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  text-align: center;
+}
+
+.team-hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.team-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.team-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  animation-delay: 0.2s;
+}
+
+.team-description {
+  color: #ddd;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-top: 0rem;
+  animation-delay: 0.3s;
+}
+
+.team-roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 1rem;
+  padding: 0 20px;
+  animation-delay: 0.4s;
+}
+
+.role-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.role-button:hover,
+.role-button.active {
+  background-color: #fff;
+  color: #333232;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation-delay: 0.5s;
+}
+
+.member-card {
+  background-color: #4e4e4e;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  opacity: 30%;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.member-roles {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.member-description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.member-links {
+  margin-top: auto;
+}
+
+.member-links a {
+  margin: 0 0.5rem;
+  color: #ffd57a;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.member-links a:hover {
+  color: #fff;
+}
+
+.member-links svg {
+  transition: transform 0.3s ease;
+}
+
+.member-links a:hover svg {
+  transform: scale(1.1);
+}

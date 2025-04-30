@@ -1,0 +1,96 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.ubicacion-container {
+  
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #484444, #333232);
+  padding: 20px;
+  padding-top: 80px; /* Espacio para la navbar */
+  padding-bottom: 100px; /* Espacio para el footer */
+}
+
+.card-ubicacion {
+  animation: fadeInUp 0.8s ease-out both;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #6d4747;
+  
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f8f5ea;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-salon {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #41392b;
+}
+
+.direccion {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.link-direcciones {
+  display: inline-block;
+  color: #0f0442;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.link-direcciones:hover {
+  text-decoration: underline;
+  color: #e0a867;
+}
+
+.mapa-embed {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-agendar {
+  display: inline-block;
+  background-color: #bda05e;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-agendar:hover {
+  background-color: #ddba8d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

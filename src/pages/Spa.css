@@ -1,0 +1,99 @@
+.spa-container {
+    background-color: #333232;
+
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .spa-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .spa-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.4%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta este valor para más/menos oscuridad */
+    z-index: 1;
+  }
+
+  
+  .spa-header-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+  
+  .spa-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 5;
+  }
+  
+  .spa-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .spa-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border: 1px solid #6b5340;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-out both;
+  }
+  
+  .spa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .spa-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #f2c49b;
+  }
+  
+  .spa-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .spa-card ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .spa-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

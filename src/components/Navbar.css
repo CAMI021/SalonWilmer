@@ -1,0 +1,286 @@
+/* === Navbar Base === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+  z-index: 999;
+}
+
+/* Navbar al hacer scroll */
+.navbar.scrolled {
+  background: rgba(51, 50, 50, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Contenedor Navbar === */
+.navbar-container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: .5rem 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Logo === */
+.navbar-logo a {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #d0bc8c;
+  text-decoration: none;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.navbar-logo span {
+  color: #928974;
+}
+
+/* === Links === */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.navbar-links a {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d0bc8c;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #928974;
+  transition: width 0.4s ease;
+}
+
+.navbar-links a:hover {
+  color: #928974;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* === Dropdown === */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d0bc8c;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  flex-direction: column;
+  border-radius: 12px;
+  background: rgba(72, 68, 68, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+  display: none;
+}
+
+.dropdown:hover::after {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(20px);
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  color: #d0bc8c;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #928974;
+  color: #ffffff;
+}
+
+/* === Botón Especial === */
+.highlighted {
+  background: linear-gradient(135deg, #d0bc8c, #f0deb6);
+  color: #333232 !important;
+  padding: 0.8rem 1.8rem !important;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  box-shadow: 0 4px 10px rgba(208, 188, 140, 0.4);
+  transition: background 0.4s ease;
+}
+
+.highlighted:hover {
+  background: linear-gradient(135deg, #d0bc8c, #eee7be);
+}
+
+/* === Toggle Responsive === */
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #d0bc8c;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* === Responsive Ajustes === */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1.2rem 5%;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(51, 50, 50, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start; /* 👈 Alinear a la izquierda */
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #d0bc8c;
+    cursor: pointer;
+    padding: 0.8rem 0;
+  }
+
+/* ... (mantén todo el CSS anterior igual) ... */
+
+/* === Responsive Ajustes === */
+@media (max-width: 768px) {
+  /* ... (mantén todo igual hasta .dropdown-content) ... */
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    opacity: 1;
+    transform: none;
+
+    pointer-events: auto;
+    padding-left: 1.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .dropdown-content.show {
+    display: flex;
+    max-height: 1000px; /* Un valor suficientemente grande */
+    padding: 0.5rem 1.5rem 1rem;
+  }
+
+  /* ... (el resto del CSS móvil permanece igual) ... */
+}
+  .dropdown-content a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #f2e7c9; /* 👈 Color más claro */
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #928974;
+    color: #ffffff;
+  }
+  
+  .highlighted {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+.navbar-logo-img {
+  height: 70px;
+  object-fit: contain;
+}
