@@ -1,7 +1,7 @@
 .footer {
   background: linear-gradient(135deg, #333232, #484444);
   padding: 2rem 1rem;
-  color: #928974; /* Color de texto general */
+  color: #928974;
 }
 
 .footer-container {
@@ -12,30 +12,25 @@
   margin: 0 auto;
 }
 
-.footer-left {
-  padding-left: 7rem;
-}
-
-
-.footer-right {
-  text-align: left;
-}
-
+/* === IZQUIERDA: LOGO Y REDES === */
 .footer-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  text-align: center;
 }
 
-.footer-logo {
-  font-size: 1.5rem;
-  margin: 0;
-  color: #D0BC8C; /* Mismo color elegante para el logo */
+.footer-logo-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .footer-socials {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .footer-socials a svg {
@@ -50,6 +45,7 @@
   color: #D0BC8C;
 }
 
+/* === DERECHA: SECCIONES DE TEXTO === */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -59,12 +55,14 @@
 .footer-section {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
 }
 
 .footer-section h4 {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #D0BC8C; /* Color para títulos 'Enlaces' y 'Contáctanos' */
+  color: #D0BC8C;
 }
 
 .footer-section ul {
@@ -93,6 +91,7 @@
   color: #d4cdbd;
 }
 
+/* === PIE DE PÁGINA === */
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
@@ -100,19 +99,17 @@
   border-top: 1px solid #5a5a58;
   padding-top: 1rem;
 }
+
 .footer-bottom p {
-  color: #b1a695; /* O el color que tú quieras */
+  color: #b1a695;
 }
 
-.footer-logo-img {
-  width: 100px;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-bottom: 10px;
+.powered-by {
+  font-style: italic;
+  color: #888888c9;
 }
 
-
-/* Responsive layout */
+/* === MEDIA QUERY: TABLET EN ADELANTE === */
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -120,11 +117,9 @@
     align-items: flex-start;
   }
 
-
-
-  .footer-left,
-  .footer-right {
-    flex: 1;
+  .footer-left {
+    align-items: flex-start;
+    text-align: left;
   }
 
   .footer-right {
@@ -133,12 +128,11 @@
   }
 
   .footer-section {
-    flex: 1;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer-logo-img {
+    margin-left: 1.5rem;
   }
 }
-
-.powered-by {
-  font-style: italic;
-  color: #888888c9;
-}
-
