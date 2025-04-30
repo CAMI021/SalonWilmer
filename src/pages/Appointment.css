@@ -110,3 +110,46 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+@media (max-width: 768px) {
+  .appointment-container {
+    padding: 1rem;
+    padding-top: 9rem;
+  }
+
+  .appointment-content {
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .appointment-text {
+    padding: 1.5rem;
+  }
+
+  .appointment-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .appointment-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .appointment-image {
+    margin-top: 1rem;
+    width: 70%;
+    align-self: center;
+  }
+
+  .appointment-image img {
+    width: 100%;
+    height: auto;
+  }
+}
