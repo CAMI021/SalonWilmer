@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.wilmerpeluquería.com/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "wilmerpeluqueria.com"
+        }
+      ],
+      "statusCode": 301
+    }
+  ]
+}
