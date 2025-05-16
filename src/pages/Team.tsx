@@ -25,9 +25,8 @@ const teamMembers: TeamMember[] = [
     description:
       "William es un apasionado del estilismo con más de 10 años de experiencia. Su enfoque detallista garantiza resultados impresionantes. Domina las últimas tendencias de coloración capilar y asesoría de imagen. Con un enfoque cálido y profesional, transforma la imagen de sus clientes elevando su confianza.",
     photo: ftperfil1,
-    instagram: "https://instagram.com/william",
-    whatsapp: "https://wa.me/1234567890",
-    linkedin: "https://linkedin.com/in/william-ortiz",
+    instagram: "https://www.instagram.com/will_ortiz_estilista/",
+    whatsapp: "https://wa.me/573002128125?text=Hola,%20me%20interesa%20contactarte",
   },
   {
     name: "Wilmer Riascos",
@@ -35,8 +34,8 @@ const teamMembers: TeamMember[] = [
     description:
       "Wilmer combina técnica y creatividad para ofrecer cortes modernos y asesoría personalizada. Su pasión por la belleza se refleja en cada cliente que atiende. Especializado en cambios de look y tendencias urbanas. Su objetivo es realzar la mejor versión de cada persona.",
     photo: ftperfil2,
-    instagram: "https://instagram.com/wilmer",
-    whatsapp: "https://wa.me/1234567891",
+    instagram: "https://www.instagram.com/wilmer_peluqueria/",
+    whatsapp: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FPNWIFD6VJ3JTN1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacftpoiOjRkxaPUR9mco-Ml5viydFriHVBwztl9JxqIiRI6Q5OFJCqtErAFtw_aem_0R_iWEbWnhbsIH0bTHgisA&e=AT2NRjKczdnYqZcQesixT0F065DVUzKL3D__iS9x68HDosQHXcgFTCo35SOGITYCvNVhwiNlMUXknQfEFqDwn83V40hOxxGL667Je7zVRIa2wNbDZIKBJQ",
   },
   {
     name: "Maria Lopez",
@@ -56,15 +55,7 @@ const teamMembers: TeamMember[] = [
     instagram: "https://instagram.com/leidy",
     whatsapp: "https://wa.me/1234567893",
   },
-  {
-    name: "Pepa Peras",
-    roles: ["Spa"],
-    description:
-      "Pepa combina técnicas de spa relajante con tratamientos estéticos de vanguardia. Su enfoque en el bienestar emocional y físico la convierte en una profesional integral. Con amplia experiencia en terapias de relajación y estética avanzada. Cada sesión es un viaje hacia el equilibrio y la belleza.",
-    photo: ftperfil5,
-    instagram: "https://instagram.com/pepa",
-    whatsapp: "https://wa.me/1234567894",
-  },
+
 ];
 
 const Team = () => {

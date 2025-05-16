@@ -18,7 +18,6 @@ export default function Hands() {
           <ul>
             <li>Manicure tradicional</li>
             <li>Manicure en gel</li>
-            <li>Uñas semipermanentes</li>
             <li>Diseño de uñas</li>
             <li>Manicure spa</li>
             <li>Reparación de uñas</li>

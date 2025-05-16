@@ -31,7 +31,7 @@ const services = [
       'Tonos fantasía',
       'Coloración para cabello rizado',
       'Corrección de color',
-      '...y mucho más'
+      
     ]
   },
   {
@@ -41,12 +41,11 @@ const services = [
     list: [
       'Cepillado con volumen',
       'Peinados recogidos',
-      'Ondas al agua',
+      'Ondas ',
       'Trenzas modernas',
       'Lisos con plancha',
       'Semirecogidos elegantes',
       'Lavado y secado con forma',
-      '...y mucho más'
     ]
   }
 ];

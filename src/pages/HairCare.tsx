@@ -21,8 +21,8 @@ export default function HairCare() {
             <li>Tratamientos para cabello seco</li>
             <li>Terapias capilares con aceites</li>
             <li>Sellado de puntas</li>
-            <li>Shock de hidratación</li>
-            <li>Y mucho más...</li>
+            
+            
           </ul>
         </div>
 
@@ -32,13 +32,13 @@ export default function HairCare() {
             Para cabellos dañados por químicos o herramientas de calor, ofrecemos servicios de reconstrucción que devuelven la fuerza y estructura al cabello.
           </p>
           <ul>
+          <li>Ozono capilar</li>
             <li>Keratina vegetal</li>
             <li>Tratamiento con proteínas</li>
             <li>Botox capilar</li>
             <li>Reestructuración con colágeno</li>
             <li>Tratamientos fortalecedores</li>
             <li>Ampollas regeneradoras</li>
-            <li>Y mucho más...</li>
           </ul>
         </div>
 
@@ -49,12 +49,10 @@ export default function HairCare() {
           </p>
           <ul>
             <li>Alisado con queratina</li>
-            <li>Tratamiento con ácido hialurónico</li>
             <li>Sellado térmico</li>
             <li>Protección anti-humedad</li>
             <li>Peinados duraderos</li>
             <li>Termoprotectores profesionales</li>
-            <li>Y mucho más...</li>
           </ul>
         </div>
       </div>

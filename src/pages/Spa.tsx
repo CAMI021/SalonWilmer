@@ -17,26 +17,23 @@ const Spa = () => {
             Combinamos técnicas profesionales y productos de alta calidad adaptados a cada tipo de piel.
           </p>
           <ul>
-            <li>Limpieza facial</li>
+            <li>Limpieza facial profunda</li>
             <li>Exfoliación facial</li>
             <li>Hidratación facial</li>
             <li>Mascarilla facial según tipo de piel</li>
+            <li>Micropigmentacion de cejas y de Labios</li>
           </ul>
         </div>
 
         <div className="spa-card">
-          <h2>Tratamientos capilares</h2>
+          <h2>Tratamientos Corporales</h2>
           <p>
-            Relaja tu cuero cabelludo y devuelve la vitalidad a tu melena con nuestros tratamientos capilares.
-            Ofrecemos soluciones naturales y profesionales para fortalecer y restaurar el cabello dañado.
+            Relajación y el cuidado personal con nuestros exclusivos tratamientos corporales, diseñados para rejuvenecer tu piel y reconectar con tu bienestar.
           </p>
           <ul>
-            <li>Mascarilla nutritiva con aceites</li>
-            <li>Tratamiento de keratina (básico o express)</li>
-            <li>Reconstrucción capilar sencilla</li>
-            <li>Mascarilla de hidratación profunda</li>
-            <li>Tratamiento de ampolla hidratante</li>
-            <li>Baño de crema hidratante</li>
+            <li>Masajes terapéutico</li>
+            <li>Masajes descontracturante</li>
+            <li>Traratamientos adelgazantes</li>
           </ul>
         </div>
       </div>

@@ -17,6 +17,7 @@ const Depilation = () => {
             Cuida la piel de tu rostro con nuestras opciones especializadas de depilación facial, pensadas para ofrecerte suavidad y precisión con el máximo cuidado.
           </p>
           <ul>
+            <li>Depilación con cera y con IpL</li>
             <li>Depilación de cejas</li>
             <li>Depilación de labio superior</li>
             <li>Depilación de mentón</li>
