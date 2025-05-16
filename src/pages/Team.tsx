@@ -6,7 +6,7 @@ import ftperfil1 from "../assets/fthombre.png";
 import ftperfil2 from "../assets/fthombre.png";
 import ftperfil3 from "../assets/fomujer.png";
 import ftperfil4 from "../assets/fomujer.png";
-import ftperfil5 from "../assets/fomujer.png";
+
 
 interface TeamMember {
   name: string;
