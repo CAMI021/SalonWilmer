@@ -12,13 +12,13 @@ const Footer = () => {
         <div className="footer-left">
           <img src={logo} alt="Logo de Wilmer Peluquería" className="footer-logo-img" />
           <div className="footer-socials">
-            <a href="https://www.tiktok.com/@wilmer_peluqueriax" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@wilmerpeluqueria?_t=ZS-8wUYC2ngxyX&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
               <FaTiktok />
             </a>
-            <a href="https://www.facebook.com/jhonwilmer.riascosmunoz/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/16GgBEiCkX/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/wilmer_.peluqueria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/wilmer_peluqueria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
             <a href="https://co.pinterest.com/peluqueriawilmer/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">

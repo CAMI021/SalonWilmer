@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Gallery.css';
 import ondas9 from '../assets/ondas9.jpeg';
 import risos1 from '../assets/risos1.jpg';
@@ -12,7 +12,6 @@ import risos8 from '../assets/risos8.jpg';
 import risos9 from '../assets/risos9.jpg';
 
 const images = [ondas9, risos1, risos2, risos3, risos4, risos5, risos6, risos7, risos8, risos9];
-
 
 const Gallery = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -29,12 +28,31 @@ const Gallery = () => {
     setSelectedIndex(prev => (prev! + 1) % images.length);
   };
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '//assets.pinterest.com/js/pinit.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="gallery-container">
       <div className="section-header" style={{ backgroundImage: `url(${ondas9})` }}>
         <div className="overlay">
           <h1>Nuestro Trabajo</h1>
         </div>
+      </div>
+
+      <h2 className="pinterest-title">Revisa nuestro trabajo en Pinterest</h2>
+      <div className="pinterest-embed">
+        <a
+          data-pin-do="embedBoard"
+          data-pin-board-width="1000"
+          data-pin-scale-height="300"
+          data-pin-scale-width="1000"
+          href="https://www.pinterest.com/WilmerPeluqueria/todo/"
+        ></a>
       </div>
 
       <div className="gallery-images">
